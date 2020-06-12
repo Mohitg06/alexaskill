@@ -1,0 +1,71 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "donor help",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NonProfitsPurpose",
+                    "slots": [
+                        {
+                            "name": "nonprofits",
+                            "type": "LIST_OF_NONPROFITS"
+                        }
+                    ],
+                    "samples": [
+                        "List the {nonprofits}",
+                        "{nonprofits} in my state",
+                        "{nonprofits} in US",
+                        "Tell me {nonprofits} nearby"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_NONPROFITS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "HelpMe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SoupKitchen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Craigs"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
