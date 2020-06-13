@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "donor help",
+            "invocationName": "craigs help",
             "modelConfiguration": {
                 "fallbackIntentSensitivity": {
                     "level": "LOW"
@@ -37,10 +37,7 @@
                         }
                     ],
                     "samples": [
-                        "List the {nonprofits}",
-                        "{nonprofits} in my state",
-                        "{nonprofits} in US",
-                        "Tell me {nonprofits} nearby"
+                        "ask craigs help on {nonprofits}"
                     ]
                 }
             ],
